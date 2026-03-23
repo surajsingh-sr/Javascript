@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        // crete a element 
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+    addLanguage("typscript")
+
+    // Optimise method use for add element
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        // creae text Node sytax 
+        // document.createTextNode("ndfadsofh")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("React")
+
+    // Edit
+    const editLang = document.querySelector("li:nth-child(2)")
+    // editLang.innerText = "Mogo"
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mogo"
+    editLang.replaceWith(newLi)
+
+    // edit Second method
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Typescript</li>"
+    
+    // Remove
+    const removeLang = document.querySelector("li:last-child")
+    removeLang.remove()
+</script>
+</html>
