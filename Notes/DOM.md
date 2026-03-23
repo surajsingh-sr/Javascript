@@ -1,3 +1,5 @@
-Daigram of Document Object Model
+# Daigram of Document Object Model
 
-[Note](https://excalidraw.com/)
+### Notes
+
+[CLick here](https://excalidraw.com/)
