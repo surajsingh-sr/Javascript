@@ -1,4 +1,4 @@
-# Project 3
+# Project 6
 
 ## Link [Click](https://codesandbox.io/p/sandbox/project-6-qvn7g7?file=%2Fsrc%2Findex.js%3A1%2C1-34%2C4)
 
