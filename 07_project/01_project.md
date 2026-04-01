@@ -7,7 +7,7 @@
 
  ## Project 1 Solution
  ### html
- ```
+ ```html
  <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +38,7 @@
  ```
  ### CSS
 
- ```
+ ```CSS
  html {
   margin: 0;
 }
@@ -75,7 +75,7 @@ span {
 
  ```
 ### JavaScript
-```
+```javascript
 const buttons = document.querySelectorAll(".button");
 const body = document.querySelector("body");
 
