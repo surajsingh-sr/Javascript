@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121">
+    <h1 style="color: #fff;">Suraj Singh Rajput</h1>
+   <button id="start">start</button>
+   <button id="stop">stop</button>
+
+</body>
+<script>
+    //  const varr = function(){
+    //     console.log("suraj", Date.now())
+    //  }
+    //  const varr2 = setInterval(varr, 1000)
+    //  const varr3 = function(){
+    //     document.querySelector('#start').addEventListener('click', function(){
+    //         clearInterval(varr2)
+    //         conslo.log("stopped")
+    //     })
+    //  }
+    //  const varr4 = function(){
+    //     document.querySelector('#stop').addEventListener('click', function(){
+    //         clearInterval(varr2)
+    //         conslo.log("stopped")
+    //     })
+    //  }
+    
+    let varr;
+    const start = function(){
+        console.log("hi, Suraj",)
+    }
+    document.querySelector('#start').addEventListener('click',function(){
+        varr = setInterval(start,1000)
+    })
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(varr)
+    })
+
+</script>
+</html>
