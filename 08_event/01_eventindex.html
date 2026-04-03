@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="child">Click Me</button>
+  </div>
+</body>
+<script>
+    // declare event first method
+        // document.getElementById('child').onclick = function(){
+        //     alert("it's a png image")
+        // }
+
+        // attachEvent()      // use in old time
+
+        // declare events best method in current era 
+        document.getElementById('child').addEventListener('click', function(e){
+            alert("it's a png image")
+        })
+         
+        document.getElementById('parent').addEventListener('click', function(e){
+            console.log("click inside the ul");
+            // Button → Div → Body → Document → Window
+        }, false)    // it's called event propagation 
+                     // this bubbling propagation called 
+                     // it's print bottom to top 
+                     // this is default behavior  
+
+        document.getElementById('child').addEventListener('click', function(e){
+            alert("it's a png image")
+            // Window → Document → Body → Div → Button
+        }, true)      // it's called event propagation 
+                      // this capturing propagation called 
+                      // it's print top to bottom   
+         
+
+    </script>
+</html>
